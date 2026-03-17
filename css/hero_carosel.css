@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hero_carosel .owl-nav button.owl-prev,.hero_carosel .owl-nav button.owl-next{position: absolute;bottom: 40%;right: 50%;color: #000;}
+.hero_carosel .owl-nav button.owl-prev{left: 10px}
+.hero_carosel .owl-nav button.owl-next{right: 20px}
+.hero_carosel.owl-carousel.owl-theme .owl-nav [class*='owl-'] {margin: 5px;padding: 4px 7px;display: inline-block;color: #444;font-size: 14px;border-radius: 3px;cursor: pointer;background-color: transparent;}
+.hero_carosel.owl-carousel.owl-theme .owl-nav:hover{background-color: transparent;}
+.hero_carosel.owl-carousel.owl-theme.owl-loaded a {text-decoration: none;}
+.hero_carosel i.owl-direction {margin: 0 13px;font-size: 3em;padding: 0;color: #607D8B;}
+.hero_carosel .owl-nav button.owl-next, .hero_carosel .owl-nav button.owl-prev {outline: 0;background: #FFF;width: 36px;}
+.tag{display: inline-block;}
+
+.fadeInUp{animation-name:fadeInUp}
+
+ @keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translate3d(0,100%,0);
+    }
+    to{
+        opacity:1;
+        transform:translateZ(0);
+    }
+}
+
+/*.desc {position: absolute;padding: 8%;z-index: 9;top: 50%;left: 50%;transform: translate(-50%,-50%);color:#000000;}*/
+/*.desc{position: relative;z-index: 9;top: 0;left: 0;color: #000000}*/
+/*.hero-img{position: relative;}
+.hero-img img{width: 100%;height: auto;display: inline-block}*/
+
+.btn-gradient-bg {color: #FFFFFF;font-size: 13px;display: inline-block;padding: 4px 12px;background: linear-gradient(to right, #f05874 0%, #fc6a2a 100%);border-radius: 30px;}
+.delay-1 {animation-delay: .2s;}
+.delay-2 {animation-delay: .4s;}
+.delay-3 {animation-delay: .6s;}
+.delay-4 {animation-delay: .8s;}
+
+.slider-counter {text-align: center;font-family: 'Baikal-Bold';font-size: 100px;position: absolute;bottom:0px;right: 4%;color:rgba(242, 242, 242, 0.7);font-weight: 700;/*z-index: 99;*/}
+
+ @media (max-width: 767px){
+     .slider-counter {font-size: 80px;font-weight: 600;bottom: 0}
+}
+
+ @media (max-width: 576px){
+     .slider-counter {font-size: 30px;font-weight: 500;bottom: 0}
+}
+
+.animated  {
+  -webkit-animation-duration : 1000 ms  ;
+  animation-duration : 1000 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.owl-animated-out {
+  z-index : 1 
+   }
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */ 
+.owl-animated-in {
+  z-index : 0 
+   }
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeOut  {
+  -webkit-animation-name : fadeOut  ;
+  animation-name : fadeOut  ;
+}  
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+
+@media only screen and (max-width: 962px) {
+	 .hero_carosel .owl-nav button.owl-prev, .hero_carosel .owl-nav button.owl-next {top: 50%;}
+}
+
+@media only screen and (max-width:853px){
+	/*.hero_carosel .owl-nav button.owl-prev, .hero_carosel .owl-nav button.owl-next {bottom: 33%;}*/
+	.hero_carosel .owl-nav button.owl-prev, .hero_carosel .owl-nav button.owl-next {top: 18%;}
+	.hero_carosel .owl-nav button.owl-prev{left: -5px}
+	.hero_carosel .owl-nav button.owl-next{right: -5px}
+}
+
+@media only screen and (max-width: 836px) {
+	 .hero_carosel .owl-nav button.owl-prev, .hero_carosel .owl-nav button.owl-next {top: 47%;}
+}
+
+@media only screen and (max-width: 800px) {
+    .hero_carosel .owl-nav button.owl-prev, .hero_carosel .owl-nav button.owl-next {top: 47%;}
+
+}
+
+
+
+
+
+
